@@ -14,7 +14,7 @@ pirates = [
 def pirate_selector(pirates):
     pirate_dict = pirates
     for dictionary in pirate_dict:
-        for key in dictionary:
+        for key, value in dictionary:
             print(key)
     #for key, value in pirate_dict:
     #    print(key)
