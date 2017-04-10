@@ -10,3 +10,13 @@ pirates = [
 # And returns a list of names containing the pirates that
 # - have wooden leg and
 # - have more than 15 gold
+
+def pirate_selector(pirates):
+    pirate_dict = pirates
+    for dictionary in pirate_dict:
+        for key in dictionary:
+            print(key)
+    #for key, value in pirate_dict:
+    #    print(key)
+
+pirate_selector(pirates)

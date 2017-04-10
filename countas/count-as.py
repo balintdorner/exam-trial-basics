@@ -2,14 +2,14 @@
 # counts the occurances of the letter "a", and returns it as a number.
 # If the file does not exist, the function should return 0 and not break.
 
-my_file = open('afile.txt', 'r')
-
 def count_as(file_name):
     try:
         my_file = open(file_name, 'r')
         text = my_file.read()
-        occcurances = text.count('a')
-        return text
+        occurances_A = text.count('A')
+        occurances_a = text.count('a')
+        all_occurances = occurances_a + occurances_A
+        return all_occurances
     except FileNotFoundError:
         return 0
 
