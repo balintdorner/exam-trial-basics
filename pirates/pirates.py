@@ -11,12 +11,15 @@ pirates = [
 # - have wooden leg and
 # - have more than 15 gold
 
-def pirate_selector(pirates):
-    pirate_dict = pirates
-    for dictionary in pirate_dict:
-        for key, value in dictionary:
-            print(key)
+def pirate_selector(list_pirates):
+    names = []
+
+    for pirate in list_pirates:
+        if pirate['has_wooden_leg'] == True and pirate['gold'] > 15:
+            names.append(pirate['Name'])
+
+    return names
     #for key, value in pirate_dict:
     #    print(key)
 
-pirate_selector(pirates)
+print(pirate_selector(pirates))
